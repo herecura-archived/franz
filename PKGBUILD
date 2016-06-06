@@ -1,7 +1,7 @@
 pkgname=franz
 pkgver=0.9.10
 _tag=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A free messaging app for WhatsApp, Facebook Messenger, Telegram, Slack and more.'
 arch=('i686' 'x86_64')
 depends=('alsa-lib' 'gconf' 'gtk2' 'libnotify' 'libxtst' 'nss')
@@ -40,5 +40,5 @@ package() {
     chown root:root -R "$pkgdir/opt/$pkgname"
 
     # clean unneeded resources
-    rm -rf "$pkgdir/opt/$pkgname/resources/app.asar.unpacked"
+    rm -rf "$pkgdir/opt/$pkgname/resources/app.asar.unpacked/node_modules"
 }
