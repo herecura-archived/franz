@@ -1,5 +1,5 @@
 pkgname=franz
-pkgver=3.1.0
+pkgver=3.1.1
 pkgrel=1
 pkgdesc='A free messaging app for WhatsApp, Facebook Messenger, Telegram, Slack and more.'
 arch=('i686' 'x86_64')
@@ -13,8 +13,8 @@ source_i686=("https://github.com/imprecision/franz-app/releases/download/$pkgver
 source_x86_64=("https://github.com/imprecision/franz-app/releases/download/$pkgver/$_file_x86_64")
 sha256sums=('c63052b7ada73dbc984f55afc6d0ad937bf57ae5b0b41b560ef46937afeb81c5'
             '6e761371afadf155b8bc25e94fd7de371c16130a87338300e5800924916a7a28')
-sha256sums_i686=('044b689fc145a746cd67c65f4975a88727cbe745499a39b84c9b29dc7d1862d0')
-sha256sums_x86_64=('bf8a52577eded389330134a2ec1c4748bc5a4119f0063ff1a6576df68d14ae94')
+sha256sums_i686=('fe8e5ab562df031dc2139a0cb87ded9f9101a71b626e996227cc171ee9610027')
+sha256sums_x86_64=('612460afdb2f762a8e840c990947bfe193ef59161ca4d907154fecd6ec048b85')
 noextract=("$_file_i686" "$_file_x86_64")
 
 [[ "$CARCH" = "i686" ]] && _file="$_file_i686"
